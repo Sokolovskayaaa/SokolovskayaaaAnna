@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         glasha.color = "red";
         glasha.talk();
 
+        Cat vaska = new Cat();
+        vaska.talk("Meow, meow!");
+
         Puma puma = new Puma();
         puma.name = "Leo";
 
