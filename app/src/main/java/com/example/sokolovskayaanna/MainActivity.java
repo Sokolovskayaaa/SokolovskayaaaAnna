@@ -14,43 +14,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        z++;
-
-        myCat = new Cat(4, "Puma", "Bars", "Yellow");
-        myCat.talk();
-
-        Cat murzik = new Cat(2, "Murzik", "Murz", "White");
-        murzik.talk();
-
-        Cat glasha = new Cat();
-        glasha.age = 1;
-        glasha.name = "Glasha";
-        glasha.breed = "Glash";
-        glasha.color = "red";
-        glasha.talk();
 
         Cat vaska = new Cat();
         vaska.talk("Meow, meow!");
 
-        Puma puma = new Puma();
-        puma.name = "Leo";
+        Puma bagira = new Puma();
+        bagira.talk();
 
-        puma.breathe();
+        Cat puma = new Cat();
         puma.talk();
-        puma.isAlive = true;
-        Log.i("isAlive", "My name is " + puma.name + " and " + puma.breathe());
-    }
 
-    void method(double x, int y) {
-        int a;
-        a = 1;
-        a = y + 1;
-        double d = x * 2;
-        z = a + y;
-    }
+        Cat murzik = new Lion();
+        murzik.talk();
 
-    void method1() {
-        int a;
-        a = 1;
     }
 }

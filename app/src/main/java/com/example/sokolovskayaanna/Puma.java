@@ -1,9 +1,10 @@
 package com.example.sokolovskayaanna;
 
 
+import android.util.Log;
+
 public class Puma extends Cat {
-    public void someMethod() {
-        this.age = 3;
-        this.name = "Puma";
+    public void talk() {
+        Log.i("talk()", "R-r-r! I'm puma.My name is " + name + ", and I'm " + age + " yaers old. My breed " + breed + ", my color is " + color);
     }
 }

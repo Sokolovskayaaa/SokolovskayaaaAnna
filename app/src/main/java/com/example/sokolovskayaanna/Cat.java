@@ -1,5 +1,6 @@
 package com.example.sokolovskayaanna;
 
+
 import android.util.Log;
 
 public class Cat extends Animal {
