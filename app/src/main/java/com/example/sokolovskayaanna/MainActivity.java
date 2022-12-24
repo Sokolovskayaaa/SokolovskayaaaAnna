@@ -1,7 +1,6 @@
 package com.example.sokolovskayaanna;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.*;
 import android.view.View;
@@ -9,7 +8,7 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements Printable {
+public class MainActivity extends AppCompatActivity  implements Printable{
 
     Cat myCat;
     int z;
@@ -26,16 +25,21 @@ public class MainActivity extends AppCompatActivity implements Printable {
         printable.print();
         ((Puma) printable).move();
 
-        printAnyObject(new MainActivity());
+        Puma puma = new Puma();
+        Log.i("speedOfMoving", "" + puma.speedOfMoving);
+
+        Log.i("speedOfMoving", "" + ((Puma) printable).speedOfMoving);
+
+        Log.i("speedOfMoving", "" + Movable.speedOfMoving);
 
 
     }
 
-    void printAnyObject(Printable printable) {
+    void printAnyObject(Printable printable){
 
     }
 
-    void printAnyObject(Puma puma) {
+    void printAnyObject(Puma puma){
 
     }
 
