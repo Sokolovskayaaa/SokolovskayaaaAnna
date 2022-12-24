@@ -11,6 +11,7 @@ public class Cat extends Animal {
     final static int numberOfLegs = 4;
     static int count = 0;
 
+
     String helloText;
     CatMood catMood;
 
@@ -111,6 +112,30 @@ public class Cat extends Animal {
 
     public static String whatCatsLike() {
         return "i like playing, jumping and sometimes scratching";
+    }
+
+
+    public void catchMouse(int mouseWeight) {
+        class Mouse {
+            String color;
+            int weight;
+
+            public Mouse(String color, int weight) {
+                this.color = color;
+                this.weight = weight;
+            }
+
+            String mouseVoice() {
+                return "Pi-pi-pi";
+            }
+        }
+        Mouse mouse = new Mouse("white", mouseWeight);
+
+        if (mouse.weight < 1) {
+            Log.i("cat say ", "I will eat you!" + mouse.mouseVoice());
+        } else {
+            Log.i("cat say ", "I afraid you!");
+        }
     }
 
 }
