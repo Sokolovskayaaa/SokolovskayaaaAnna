@@ -2,7 +2,7 @@ package com.example.sokolovskayaanna;
 
 import android.util.Log;
 
-public class Cat {
+public class Cat extends Animal {
     int age;
     String name;
     String breed;
@@ -24,4 +24,3 @@ public class Cat {
         Log.i("talk()", "Meow! My name is " + name + ", and I'm " + age + " yaers old. My breed " + breed + ", my color is " + color);
     }
 }
-
